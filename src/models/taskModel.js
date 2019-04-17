@@ -7,7 +7,7 @@ const taskSchema = new Schema({
     type: String,
     required: true
   },
-  taslWeekRange:{
+  taskWeekRange:{
     type: Number,
     required: true
   },
@@ -18,7 +18,8 @@ const taskSchema = new Schema({
     type: Date
   },
   isTaskActive:{
-    type: Boolean
+    type: Boolean,
+    default: false
   } 
 })
  
